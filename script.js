@@ -27,5 +27,43 @@ gsap.from(menu.children ,{
   delay:.5,
   stagger:{
       amount:2
+  },
+   scrollTrigger:{
+    trigger:menu.children
   }
+
+})
+
+// text
+gsap.utils.toArray('.title').forEach(title=>{
+  gsap.fromTo(title,{
+      letterSpacing:'10px',
+      opacity:0,
+      x:300,
+      skewX:65
+  },{
+      letterSpacing:'0',
+      opacity:1,
+      x:0,
+      skewX:0,
+      duration:1,
+      delay:.5,
+      scrollTrigger:title
+  })
+})
+
+gsap.utils.toArray('p').forEach(p=>{
+  gsap.fromTo(p,{
+      opacity:0,
+      x:150,
+      skewX:30
+  },{
+      opacity:1,
+      x:0,
+      skewX:0,
+      duration:1,
+      delay:.5,
+      scrollTrigger:p
+
+  })
 })
