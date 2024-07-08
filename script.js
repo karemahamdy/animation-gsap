@@ -67,3 +67,38 @@ gsap.utils.toArray('p').forEach(p=>{
 
   })
 })
+
+
+// lines and star
+gsap.utils.toArray('.star').forEach(star=>{
+  gsap.fromTo(star,{
+    rotation:450,
+    opacity:0,
+    y:100
+  },{
+    rotation:0,
+    opacity:1,
+    y:0,
+      duration:1,
+      delay:1.5,
+      scrollTrigger:star
+
+  })
+})
+
+
+// line
+
+gsap.utils.toArray('.line').forEach(line=>{
+  gsap.fromTo(line,{
+      opacity:0,
+      width:'0%'
+  },{
+      opacity:1,
+      width:'100%',
+      duration:1,
+      delay:1,
+      scrollTrigger:line
+
+  })
+})
