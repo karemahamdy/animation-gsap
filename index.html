@@ -6,35 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSAP Animation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-@font-face {
-    font-family: bm;
-    src: url(./font/BlackMango-Black.otf);
-}
-
-body{
-    background: url(./img/stars-bg.png);
-    color: rgb(184, 182, 182);
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-}
-li{
-  color: white;
-}
-    li:hover {
-    border-bottom: 2px white solid;  
-    }
-  </style>
   <body>
     <header >
       <div class="container p-4">  
@@ -53,6 +28,33 @@ li{
       </nav>
       </div>
   </header>
+ 
+  <section class="section-one">
+    <div class="container m-8 grid grid-cols-2">
+        <div class="left-side">
+            <div class="title">
+                <h1>get gold &
+                  
+                      silver deliverd <br> to your door</h1>
+            </div>
+
+            <p class="p">
+                Gold and silver have intrinsic value and adds
+                diversification to your portfolio.
+                We help investors narrow thier decision 
+                down to either buying dold or silver bullion bars or coins
+            </p>
+            <button class=" mt-12 bg-gradient-to-r from-[#2B32B2] to-[#1488CC] hover:bg-gradient-to-r from-[#1488CC] to-[#1488CC] text-white font-bold py-2 px-4 rounded">
+              know more
+            </button>
+
+        </div>
+        <div class="right-side pyramid">
+            <img src="./img/gold.png" alt="" class="glow h-[600px]">
+        </div>
+    </div>
+</section>
+
   <!-- Footer container -->
 <footer
 class="flex flex-col items-center leading-12  text-center text-surface ">

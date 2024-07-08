@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: bm;
+    src: url(./font/BlackMango-Black.otf);
+}
+
+body{
+    background: url(./img/stars-bg.png);
+    color: rgb(184, 182, 182);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+li{
+  color: white;
+}
+    li:hover {
+    border-bottom: 2px white solid;  
+    }
+    
+    section{
+  height: 100vh;
+  padding: 3rem;
+}
+
+.section-one{
+  height: calc(100vh - 85px);
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: auto;
+  align-items: center;
+  max-width: 1300px;
+}
+
+.gold{
+  height: 600px;
+  width: 600px;
+  object-fit: cover;
+}
+.title{
+  line-height: 1.2;
+}
+.title h1{
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.title .star{
+  width: 40px;
+}
+
+p{
+  font-size: 14px;
+  font-weight: 600;
+  max-width: 400px;
+}
+
+.p{
+  padding: 2rem 0;
+}
+.glow{
+filter: drop-shadow(-20px 0px 1.75em rgb(81,147,194));
+}
