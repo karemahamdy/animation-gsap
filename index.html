@@ -10,8 +10,29 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: bm;
+    src: url(./font/BlackMango-Black.otf);
+}
+
+body{
+    background: url(./img/stars-bg.png);
+    color: rgb(184, 182, 182);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+li{
+  color: white;
+}
     li:hover {
-    border-bottom: 2px black solid;  
+    border-bottom: 2px white solid;  
     }
   </style>
   <body>
@@ -34,7 +55,7 @@
   </header>
   <!-- Footer container -->
 <footer
-class="flex flex-col items-center leading-12 bg-zinc-50 text-center text-surface dark:bg-neutral-700 dark:text-white lg:text-left">
+class="flex flex-col items-center leading-12  text-center text-surface ">
 <div class="container p-6">
   <div class="grid place-items-center md:grid-cols-2 lg:grid-cols-2">
     <!-- First links section -->
